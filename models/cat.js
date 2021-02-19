@@ -3,12 +3,7 @@ const orm = require("../config/orm.js");
 
 const cat = {
   all(cb) {
-<<<<<<< HEAD
     orm.all("cats", (res) => cb(res));
-=======
-    console.log(arguments);
-    orm.all('cats', (res) => cb(res));
->>>>>>> master
   },
   // The variables cols and vals are arrays.
   create(cols, vals, cb) {
