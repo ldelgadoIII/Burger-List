@@ -21,7 +21,7 @@ The user must install mysql, express, and express-handlebars.
 
 ## Usage
 
-![Page Preview](assets/pagePreview.PNG)
+![Page Preview](public/assets/images/pagePreview.PNG)
 
 ## License
 
