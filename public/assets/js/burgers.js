@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       e.preventDefault();
 
       const newBurger = {
-        name: document.getElementById("ca").value.trim(),
+        name: document.getElementById("bu").value.trim(),
       };
 
       // Send POST request to create a new quote
@@ -85,10 +85,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         body: JSON.stringify(newBurger),
       }).then(() => {
         // Empty the form
-        document.getElementById("ca").value = "";
+        document.getElementById("bu").value = "";
 
         // Reload the page so the user can see the new quote
-        console.log("Created a new cat!");
+        console.log("Created a new burger!");
         location.reload();
       });
     });
