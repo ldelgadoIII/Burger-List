@@ -1,24 +1,24 @@
 <h1>Burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Burgers Available!</h2>
 
-<ul>
+<ol>
   {{#each cats}}
   {{#unless devour}}
   {{> burgers/burger-block status=true}}
   {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Consumed Burgers!</h2>
 
-<ul>
+<ol>
   {{#each cats}}
   {{#if devour}}
   {{> burgers/burger-block status=false}}
   {{/if}}
   {{/each}}
-</ul>
+</ol>
 
 <h2>Add a Burger</h2>
 <form id="create-form">
