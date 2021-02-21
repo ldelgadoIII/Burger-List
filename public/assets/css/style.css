@@ -1,5 +1,13 @@
 body {
-  background-color: rgb(88, 245, 88);
+  background-color: rgb(239, 241, 118);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 200px;
 }
 
 li {
