@@ -2,10 +2,6 @@ body {
   background-color: rgb(239, 241, 118);
 }
 
-h1 {
-  text-align: center;
-}
-
 img {
   width: 200px;
 }
@@ -28,4 +24,28 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+button {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+h2 {
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+#columns {
+  margin-top: 30px;
+}
+
+textarea#bu {
+  margin-top: 50px;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  padding-top: 35px;
 }

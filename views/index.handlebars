@@ -1,11 +1,12 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container text-center">
+  <h1>Eat-Da-Burger!</h1>
+  <img src="../assets/images/burger-pic.png" alt="burger">
+</div>
 
-<img src="../assets/images/burger-pic.png" alt="burger">
-
-<div class="container">
+<div class="container" id="columns">
 <div class="row">
   <div class="col-md-6">
-    <h2>Burgers Available!</h2>
+    <h2>Burgers Available</h2>
 
     <ol>
       {{#each burgers}}
@@ -16,7 +17,7 @@
     </ol>
   </div>
   <div class="col-md-6">
-    <h2>Consumed Burgers!</h2>
+    <h2>Consumed Burgers</h2>
 
     <ol>
       {{#each burgers}}
@@ -30,18 +31,16 @@
 
 </div>
 
-<div class="container">
+<div class="container text-center" id="newBurgerForm">
   <div class="row">
-    <div class="col-md-6">
-      <h2>Add a Burger</h2>
+    <div class="col-md-12">
       <form id="create-form">
 
       <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="bu" name="name">
+        <textarea type="text" id="bu" name="name"></textarea>
       </div>
 
-      <button type="submit">Add Burger</button>
+      <button class="btn btn-primary" type="submit">Add Burger</button>
       </form>
     </div>
   </div>
