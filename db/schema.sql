@@ -1,5 +1,4 @@
-### Schema
-
+DROP DATABASE IF EXISTS cat_db;
 CREATE DATABASE cat_db;
 USE cat_db;
 

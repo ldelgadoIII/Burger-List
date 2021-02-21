@@ -6,16 +6,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // DELETE
   // Get the button
-  const deleteQuoteBtns = document.querySelectorAll(".adopt-cat");
+  const deleteQuoteBtns = document.querySelectorAll(".remove-burger");
 
   // Set up the event listeners for each delete button
   deleteQuoteBtns.forEach((button) => {
     button.addEventListener("click", (e) => {
       const id = e.target.getAttribute("data-id");
-      console.log("delete cat id", id);
+      console.log("delete burger id", id);
 
       // Send the delete request
-      fetch(`/api/cats/${id}`, {
+      fetch(`/api/burgers/${id}`, {
         method: "DELETE",
       }).then((res) => {
         console.log(res);
@@ -31,22 +31,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // UPDATE
-  const changeSleepBtns = document.querySelectorAll(".change-sleep");
+  const changeDevourBtns = document.querySelectorAll(".change-status");
 
   // Set up the event listener for the create button
-  if (changeSleepBtns) {
-    changeSleepBtns.forEach((button) => {
+  if (changeDevourBtns) {
+    changeDevourBtns.forEach((button) => {
       button.addEventListener("click", (e) => {
         console.log("test");
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute("data-id");
-        const newSleep = e.target.getAttribute("data-newsleep");
+        const newStatus = e.target.getAttribute("data-status");
 
-        const newSleepState = {
-          sleepy: newSleep,
+        const newState = {
+          devour: newStatus,
         };
 
-        fetch(`/api/cats/${id}`, {
+        fetch(`/api/burgers/${id}`, {
           method: "PUT",
           headers: {
             Accept: "application/json",
@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
           },
 
           // make sure to serialize the JSON body
-          body: JSON.stringify(newSleepState),
+          body: JSON.stringify(newState),
         }).then((response) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed sleep to: ${newSleep}`);
+            console.log(`changed sleep to: ${newStatus}`);
             location.reload("/");
           } else {
             alert("something went wrong!");
