@@ -51,6 +51,12 @@ ol {
   margin-top: 30px;
 }
 
+#instructions {
+  color: #7b6c6c;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
 textarea#bu {
   margin-top: 50px;
   width: 500px;
