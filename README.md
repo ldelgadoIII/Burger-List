@@ -4,7 +4,7 @@
 
 ## Descriptions
 
-Using handlebars and data stored in mySQL this application allows users to add and store a list of burgers. When a burger is produced it will display in the available burgers column along with two buttons. These buttons allow the user to "consume" the burger which transfers the burger to the right column and the other button allows the user to remove the burger all-together.
+Using handlebars and data stored in mySQL this application allows users to add and store a list of burgers. When a burger is produced it will display in the available burgers column along with two buttons. These buttons allow the user to "consume" the burger which transfers the burger to the right column and the other button allows the user to remove the burger all-together. To view this page please visit my portfolio at: https://ldelgadoiii.github.io/Responsive-Portfolio/index.html
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ The user must install mysql, express, and express-handlebars.
 
 ## Usage
 
-![Page Preview](public/assets/images/burgerAppImg.jpg)
+![Page Preview](./public/assets/images/burgerAppImg.jpg)
 
 ## License
 
