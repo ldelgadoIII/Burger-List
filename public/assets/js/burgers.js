@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           body: JSON.stringify(newState),
         }).then((response) => {
           if (response.ok) {
-            console.log(`changed sleep to: ${newStatus}`);
+            console.log(`changed status to: ${newStatus}`);
             location.reload("/");
           } else {
             alert("something went wrong!");
@@ -69,10 +69,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     createBurgerBtn.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      // Grabs the value of the textarea that goes by the name, "quote"
-      const newCat = {
+      const newBurger = {
         name: document.getElementById("ca").value.trim(),
-        sleepy: document.getElementById("sleepy").checked,
       };
 
       // Send POST request to create a new quote
@@ -84,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
 
         // make sure to serialize the JSON body
-        body: JSON.stringify(newCat),
+        body: JSON.stringify(newBurger),
       }).then(() => {
         // Empty the form
         document.getElementById("ca").value = "";
