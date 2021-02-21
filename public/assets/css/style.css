@@ -28,14 +28,23 @@ li {
 
 button {
   color: white;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #55c017;
+  border-color: #55c017;
+  border-radius: 15px;
+  border: none;
+  padding: 3px 8px;
 }
 
 h2 {
+  color: #460000;
   text-align: center;
   font-style: oblique;
   text-decoration: underline;
+}
+
+ol {
+  color: #7b6c6c;
+  font-size: 19px;
 }
 
 #columns {
