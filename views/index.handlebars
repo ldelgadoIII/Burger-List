@@ -3,7 +3,7 @@
 <h2>Burgers Available!</h2>
 
 <ol>
-  {{#each cats}}
+  {{#each burgers}}
   {{#unless devour}}
   {{> burgers/burger-block status=true}}
   {{/unless}}
@@ -13,7 +13,7 @@
 <h2>Consumed Burgers!</h2>
 
 <ol>
-  {{#each cats}}
+  {{#each burgers}}
   {{#if devour}}
   {{> burgers/burger-block status=false}}
   {{/if}}
